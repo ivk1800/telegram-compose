@@ -1,6 +1,8 @@
 plugins {
+    kotlin("kapt")
     id("com.android.application")
     id("kotlin-android")
+    id("dagger.hilt.android.plugin")
 }
 
 android {
@@ -51,6 +53,10 @@ android {
     }
 }
 
+kapt {
+    correctErrorTypes = true
+}
+
 dependencies {
     api(project(":feature:auth:auth-manager"))
     api(project(":feature:auth:feature-auth-api"))
@@ -58,6 +64,12 @@ dependencies {
 
     implementation("com.google.accompanist:accompanist-navigation-animation:0.21.2-beta")
 
+    implementation(libs.cicerone)
+
+    implementation(libs.dagger.hilt.android)
+    kapt(libs.dagger.hilt.compiler)
+
+    implementation(libs.androidx.startup)
     implementation(libs.androidx.navigation.compose)
     implementation(libs.androidx.startup)
     implementation(libs.androidx.core)
