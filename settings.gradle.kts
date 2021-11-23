@@ -15,3 +15,13 @@ dependencyResolutionManagement {
 }
 rootProject.name = "tg"
 include(":app")
+include(":feature:auth:auth-manager")
+include(":feature:auth:auth-manager-td")
+include(":feature:auth:feature-auth-api")
+include(":feature:auth:feature-auth-impl")
+include(":feature:auth:feature-auth-ui")
+include(":feature:auth:feature-auth-presentation")
+include(":common-ui-compose")
+include(":td-lib-api")
+include(":compose:compose-utils")
+include(":view-model-utils")

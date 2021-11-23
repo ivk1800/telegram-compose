@@ -43,7 +43,6 @@ android {
     }
     composeOptions {
         kotlinCompilerExtensionVersion = "1.0.1"
-        kotlinCompilerVersion = libs.versions.kotlin.toString()
     }
     packagingOptions {
         resources {
@@ -53,6 +52,10 @@ android {
 }
 
 dependencies {
+    api(project(":feature:auth:auth-manager"))
+    api(project(":feature:auth:feature-auth-api"))
+    implementation(project(":feature:auth:feature-auth-impl"))
+
     implementation("com.google.accompanist:accompanist-navigation-animation:0.21.2-beta")
 
     implementation(libs.androidx.navigation.compose)
