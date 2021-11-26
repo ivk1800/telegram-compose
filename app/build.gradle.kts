@@ -58,7 +58,11 @@ kapt {
 }
 
 dependencies {
+    api(project(":app-controller"))
     api(project(":feature:auth:auth-manager"))
+    api(project(":core-tdlib-api"))
+    implementation(project(":core-tdlib-impl"))
+    implementation(project(":td-lib-client"))
     api(project(":feature:auth:feature-auth-api"))
     implementation(project(":feature:auth:feature-auth-impl"))
 
