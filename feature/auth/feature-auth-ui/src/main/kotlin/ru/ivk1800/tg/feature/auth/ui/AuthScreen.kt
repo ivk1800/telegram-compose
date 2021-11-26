@@ -126,7 +126,8 @@ fun PhoneContent(
                 keyboardType = KeyboardType.Number,
             ),
             keyboardActions = KeyboardActions(
-                onDone = { keyboardController?.hide() })
+                onDone = { keyboardController?.hide() },
+            )
         )
     }
 }

@@ -9,7 +9,6 @@ import kotlinx.coroutines.flow.filterIsInstance
 import kotlinx.coroutines.launch
 import org.drinkless.tdlib.TdApi
 import org.drinkless.tdlib.TdApi.AuthorizationStateClosed
-import org.drinkless.tdlib.TdApi.AuthorizationStateWaitTdlibParameters
 import ru.ivk1800.tg.api.provider.update.AuthenticationStateProvider
 import ru.ivk1800.tg.api.provider.update.UpdatesProvider
 

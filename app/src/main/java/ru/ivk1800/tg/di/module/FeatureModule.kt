@@ -4,7 +4,6 @@ import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-import kotlinx.coroutines.delay
 import ru.ivk1800.tg.feature.auth.AuthenticationManager
 import ru.ivk1800.tg.feature.auth.api.FeatureAuthApi
 import ru.ivk1800.tg.feature.auth.impl.FeatureAuthDependencies
@@ -22,7 +21,6 @@ object FeatureModule {
     ): FeatureAuthApi = FeatureAuthImpl(dependencies)
 
     // endregion dependencies
-
 
     // region features
 

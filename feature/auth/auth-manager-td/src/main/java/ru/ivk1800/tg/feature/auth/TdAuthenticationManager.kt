@@ -1,6 +1,6 @@
 package ru.ivk1800.tg.feature.auth
 
-class TdAuthenticationManager: AuthenticationManager {
+class TdAuthenticationManager : AuthenticationManager {
 
     override suspend fun setAuthenticationPhoneNumber(phoneNumber: String) {
         TODO("Not yet implemented")

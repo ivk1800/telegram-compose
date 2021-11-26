@@ -4,5 +4,5 @@ interface AppController {
 
     fun init()
 
-    fun readyForInteraction();
+    fun readyForInteraction()
 }

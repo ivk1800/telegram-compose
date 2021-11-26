@@ -36,7 +36,6 @@ class TdLibClient {
                 } else {
                     continuation.resumeWith(Result.success(result as T))
                 }
-
             }
         }
     }

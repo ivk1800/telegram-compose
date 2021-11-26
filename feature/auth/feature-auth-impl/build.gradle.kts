@@ -11,7 +11,7 @@ android {
         targetSdk = 31
     }
     buildFeatures {
-        compose  = true
+        compose = true
     }
     composeOptions {
         kotlinCompilerExtensionVersion = "1.0.1"

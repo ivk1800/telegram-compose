@@ -12,7 +12,7 @@ class ComposeNavigator(
         for (command in commands) {
             when (command) {
                 is Forward -> {
-                    navController.navigate(command.screen.screenKey ) {
+                    navController.navigate(command.screen.screenKey) {
                         popUpTo(0)
                     }
                 }

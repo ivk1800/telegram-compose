@@ -28,6 +28,7 @@ class TdInitializer : Initializer<Unit> {
         entryPoint.getAuthenticationStateProvider()
         client.init()
         router.toAuth()
+//        Log.e()
     }
 
     override fun dependencies(): List<Class<out Initializer<*>>> {
