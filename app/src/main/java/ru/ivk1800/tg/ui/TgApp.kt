@@ -58,7 +58,8 @@ fun TgApp(
             composable(
                 "auth",
             ) {
-                featureProvider.featureAuthApi.authScreenFactory.Create()
+//                featureProvider.featureAuthApi.authScreenFactory.Create()
+                featureProvider.featureMainScreenApi.mainScreenFactory.Create()
             }
         }
     }

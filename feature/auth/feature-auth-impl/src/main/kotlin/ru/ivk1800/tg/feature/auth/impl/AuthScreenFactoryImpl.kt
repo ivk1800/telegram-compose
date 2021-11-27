@@ -7,7 +7,7 @@ import ru.ivk1800.tg.feature.auth.api.AuthScreenFactory
 import ru.ivk1800.tg.feature.auth.presentation.AuthViewModel
 import ru.ivk1800.tg.feature.auth.ui.AuthScreen
 
-class AuthScreenFactoryImpl(
+internal class AuthScreenFactoryImpl(
     private val dependencies: FeatureAuthDependencies
 ) : AuthScreenFactory {
     @ExperimentalComposeUiApi

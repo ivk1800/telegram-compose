@@ -16,7 +16,6 @@ import ru.ivk1800.tg.app.AppControllerRouter
 import ru.ivk1800.tg.app.DeviceInfoProvider
 import ru.ivk1800.tg.logger.TdLogger
 import java.io.File
-import java.nio.file.Path
 import javax.inject.Singleton
 
 @Module

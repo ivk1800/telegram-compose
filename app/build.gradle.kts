@@ -65,6 +65,10 @@ dependencies {
     implementation(project(":td-lib-client"))
     api(project(":feature:auth:feature-auth-api"))
     implementation(project(":feature:auth:feature-auth-impl"))
+
+    api(project(":feature:main-screen:feature-main-screen-api"))
+    implementation(project(":feature:main-screen:feature-main-screen-impl"))
+
     api(project(":feature:auth:auth-manager"))
     implementation(project(":feature:auth:auth-manager-td"))
     api(project(":td-logger"))

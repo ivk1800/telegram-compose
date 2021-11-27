@@ -2,8 +2,6 @@ package ru.ivk1800.tg.initializer
 
 import android.content.Context
 import androidx.startup.Initializer
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
 import ru.ivk1800.tdlib.TdLibClient
 import ru.ivk1800.tg.api.TdFunctionExecutor
 import ru.ivk1800.tg.api.provider.update.AuthenticationStateProvider

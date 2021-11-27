@@ -9,8 +9,6 @@ import ru.ivk1800.tdlib.TdLibClient
 import ru.ivk1800.tg.api.TdFunctionExecutor
 import ru.ivk1800.tg.api.provider.update.AuthenticationStateProvider
 import ru.ivk1800.tg.api.provider.update.UpdatesProvider
-import ru.ivk1800.tg.feature.auth.AuthenticationManager
-import ru.ivk1800.tg.feature.auth.TdAuthenticationManager
 import ru.ivk1800.tg.impl.TdFunctionExecutorImpl
 import ru.ivk1800.tg.impl.provider.update.AuthenticationStateProviderImpl
 import ru.ivk1800.tg.impl.provider.update.UpdatesProviderImpl
