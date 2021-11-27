@@ -29,6 +29,8 @@ class TdLibClient {
     }
 
     suspend fun <T : TdApi.Object> send(obj: TdApi.Function): T {
+        // todo temporary
+        check(Thread.currentThread().name != "main")
         return suspendCoroutine { continuation ->
             client.send(obj) { result ->
                 if (result is TdApi.Error) {

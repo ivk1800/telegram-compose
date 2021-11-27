@@ -65,6 +65,9 @@ dependencies {
     implementation(project(":td-lib-client"))
     api(project(":feature:auth:feature-auth-api"))
     implementation(project(":feature:auth:feature-auth-impl"))
+    api(project(":feature:auth:auth-manager"))
+    implementation(project(":feature:auth:auth-manager-td"))
+    api(project(":td-logger"))
 
     implementation("com.google.accompanist:accompanist-navigation-animation:0.21.2-beta")
 

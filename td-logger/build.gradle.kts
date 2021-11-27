@@ -9,9 +9,4 @@ java {
 }
 
 dependencies {
-    implementation(project(":td-lib-api"))
-    api(project(":core-tdlib-api"))
-    api(project(":feature:auth:auth-manager"))
-
-    implementation(libs.androidx.annotation)
 }

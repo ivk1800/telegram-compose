@@ -5,6 +5,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.hadilq.liveevent.LiveEvent
 import com.hadilq.liveevent.LiveEventConfig
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -33,7 +34,7 @@ class AuthViewModel(
     fun observeClearCodeEvent(): LiveData<Unit> = clearCodeEvent
 
     fun onSubmitPhoneTap(phone: String) {
-        viewModelScope.launch {
+        viewModelScope.launch(Dispatchers.IO) {
             state.update {
                 AuthUiState.PhoneState(
                     blockInteraction = true,
@@ -60,7 +61,7 @@ class AuthViewModel(
     }
 
     fun onSubmitCodeTap(code: String) {
-        viewModelScope.launch {
+        viewModelScope.launch(Dispatchers.IO) {
             state.value = AuthUiState.CodeState(
                 blockInteraction = true,
                 title = currentPhoneNumber.orEmpty(),

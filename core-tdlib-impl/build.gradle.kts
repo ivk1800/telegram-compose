@@ -12,6 +12,7 @@ dependencies {
     api(project(":td-lib-api"))
     api(project(":core-tdlib-api"))
     implementation(project(":td-lib-client"))
+    api(project(":td-logger"))
 
     implementation(libs.androidx.annotation)
 //    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2")
